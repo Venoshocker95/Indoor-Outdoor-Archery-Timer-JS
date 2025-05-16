@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMER GARA</title>
+
+    <link rel="stylesheet" type="text/css" href="./styleSemaforo.css">
+    <script src="./semaforo.js"></script>
+    
+</head>
+
+
+
+<body>
+
+    <div class="divVolee">
+        <span class="spanVolee" id="spanVolee">-- Volée</span>
+    </div>
+
+    <div class="pannelloCentrale">
+        <span class="spanTimer" id="spanTimer">--</span>
+        <span class="spanTurno" id="spanTurno">--</span>
+    </div>
+
+    <audio id="fischio" src="./fischio.mp3" preload="auto"></audio>
+
+    <div id="divBtn">
+        <button type="submit" class="bottoneMenu" id="btnIndietro">
+            <a href="./index.html" onclick="tornaAlMenu()">TORNA AL<br>MENU</a>
+        </button>
+
+        <button type="submit" class="bottoneNuovoTurno" id="btnNuovoTurno" onclick="prossimoTurno()">
+            PROSSIMO TURNO
+        </button>
+
+        <button type="submit" class="bottoneTerminaTurno" id="btnTerminaTurno" onclick="terminaTurno()">
+            TERMINA TURNO
+        </button>
+    </div>
+
+</body>
+</html>

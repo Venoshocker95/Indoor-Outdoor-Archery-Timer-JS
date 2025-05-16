@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./styleTimer.css">
+    <script src="./timerJS.js"></script>
+
+    <title>Gestione Timer</title>
+</head>
+<body>
+
+    <div class="barraTitolo">
+        <h1>GESTIONE TIMER</h1>
+    </div>
+
+    <div>
+
+        <form>
+
+            <table>
+
+                <tr class="headerTabella">
+
+                    <th>TIPO DI GARA      </th>
+
+                    <th>SECONDI VOLÉE     </th>
+
+                    <th>TASTO DI SELEZIONE</th>
+
+                </tr>
+
+
+                <tr class="tabellaIndoor">
+
+                    <td class="descrittoreGara">18-25m INDOOR</td>
+
+                    <td><textarea id="secondiIndoor" cols="5" rows="1" disabled>120</textarea></td>
+
+                    <td>
+                        <!-- <button type="submit" class="bottoneMenu" id="bottoneIndoor" onclick= "timerIndoor()">AVVIA TIMER<br>INDOOR</button> -->
+                        <button type="submit" class="bottoneMenu" id="bottoneIndoor">
+                            <a href="./semaforo.html" onclick= "timerIndoor()">AVVIA TIMER<br>INDOOR</a>
+                        </button>
+                    </td>
+
+                </tr>
+
+
+                <tr class="tabellaOutdoor">
+
+                    <td class="descrittoreGara">40~70m OUTDOOR</td>
+
+                    <td><textarea id="secondiOutdoor" cols="5" rows="1" disabled>240</textarea></td>
+
+                    <td>
+                        <!-- <button type="submit" class="bottoneMenu" id="bottoneOutdoor" onclick="timerOutdoor()">AVVIA TIMER<br>OUTDOOR</button> -->
+                        <button type="submit" class="bottoneMenu" id="bottoneOutdoor">
+                            <a href="./semaforo.html" onclick="timerOutdoor()">AVVIA TIMER<br>OUTDOOR</a>
+                        </button>
+                    </td>
+
+                </tr>
+
+
+                <tr class="tabellaPersonalizzata">
+
+                    <td class="descrittoreGara">PERSONALIZZATO</td>
+
+                    <td><textarea id="secondiPersonalizzati" cols="5" rows="1" placeholder="Es: 60"></textarea></td>
+
+                    <td>
+                        <!-- <button type="submit" class="bottoneMenu" id="bottonePersonale" onclick="timerPersonale()">AVVIA TIMER<br>PERSONALE</button> -->
+                        <button type="submit" class="bottoneMenu" id="bottonePersonale">
+                            <a href="./semaforo.html" onclick="timerPersonale()">AVVIA TIMER<br>PERSONALE</a>
+                        </button>
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </form>
+
+    </div>
+
+
+
+    <div id="barraFooter"></div>
+
+    <footer>
+        <p>Realizzato da Elia Maggi</p>
+    </footer>
+    
+</body>
+</html>
